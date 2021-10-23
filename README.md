@@ -1,3 +1,7 @@
+<h1 align="center">
+  <img alt="Background_desktop" title="Background_desktop" src="/public/images/desktop.png" width="1000px" />
+</h1>
+
 ## Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
