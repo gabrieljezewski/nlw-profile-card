@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  --black: hsl(240, 6%, 13%);
+  --grey: hsl(240, 9%, 89%);
+
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;         /* Colocando os elementos dentro de caixas */
+  place-items: center;
+}
+
+main {
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  color: var(--grey);
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+
+  position: relative;     /* Definido a imagem do avatar como o limite absoluto, e não mais o corpo da página */
+}
+
+.avatar span {
+  position: absolute;     /* Colocando o selo acima da imagem */
+  top: -15px;
+  z-index: 1;             /* Voltando o selo acima da imagem, pois tinha ficado abaixo depois do clip-path */
+}
+
+.avatar > img {           /* Pegando a img do primeiro nível */
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;      /* Adaptando a imagem para o width e height especificado */
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);   /* Ajustando a imagem para o formato do figma https://bennettfeely.com/clippy/ */
+}
+
+h1 {
+  font-size: 1.5rem;
+
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+
+  list-style: none;       /* Removendo os "pontos" ao lado da lista */
+  padding: 0;
+
+  display: flex;         /* Colocando os elementos um do lado do outro */
+  gap: 0.5rem;           /* Espaço entre os elementos */
+
+  justify-content: center;
+}
+
+/* Animação das redes sociais */
+li {
+  transition: all 0.2s;
+}
+
+li:hover {
+  transform: translateY(-0.25em);
+}
+
+/* Responsive tablet */
+@media (min-width: 720px) {
+  main {
+    background: url(images/background-desktop.svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
+  }
+  .avatar {
+    width: 10rem;
+    margin: 14rem auto 0;
+    position: relative;
+  }
+
+  .avatar span {
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+  }
+}
+
+/* Responsive desktop */
+@media (min-width: 960px) {
+  main {
+    background: url(images/background-desktop.svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
+  }
+  .avatar {
+    width: 10rem;
+    margin: 14rem auto 0;
+    position: relative;
+  }
+
+  .avatar span {
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+  }
+}
