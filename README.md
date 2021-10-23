@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Background_desktop" title="Background_desktop" src="/public/images/desktop.png" width="1000px" />
+  <img alt="bg_desktop" title="bg_desktop" src="/images/desktop.png" width="1000px" />
 </h1>
 
 ## Tecnologias
