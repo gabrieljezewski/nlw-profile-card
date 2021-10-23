@@ -13,7 +13,7 @@ Layout de uma aplicação onde as pessoas podem gerar seu crachá para participa
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através da url https://gabrieljezewski.github.io/cracha-nlw/ ou [desse link](https://www.figma.com/community/file/1031698737363668691). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através da url https://gabrieljezewski.github.io/nlw-profile-card/ ou [desse link](https://www.figma.com/community/file/1031698737363668691). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 
